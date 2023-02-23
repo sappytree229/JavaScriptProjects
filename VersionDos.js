@@ -131,9 +131,10 @@ async function processAllEntries() {
     //For loop to add each domain and ip that is listed in the dictionary
     for (var [domainName, IPAddy] of Object.entries(namesAndAddresses)) {
 				
-				await pause(5000);      
+	await pause(5000);      
       
         window.self = document;
+	
         //Function to press sidebar "add device button"
         MenuFunction();
 
